@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+.box {
+
+    background-color: #fff;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5rem 0;
+}
+
+.box-imagen img{
+
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 60%;
+}
+
+.box-text {
+
+    padding: 1.8rem;
+    position: relative;
+}
+
+.box-text h3 {
+
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.box-text p {
+
+    margin-top: 0.3rem;
+    color: hsl(214, 17%, 51%);
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
+
+.box-text-woman {
+
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-text-woman-all {
+
+    display: flex;
+}
+
+.box-text-woman-pf {
+
+    margin-left: 5%;
+}
+
+.box-text-woman img {
+
+    width: 16%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.box-text-woman-pf h4{
+
+    font-size: 0.8rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.box-text-woman-pf p {
+
+    color: hsl(212, 23%, 69%);
+    position: relative;
+    bottom: 0.4rem;
+}
+
+.box-text-woman-share img {
+
+    width: 1.3rem;
+}
+
+.box-text-woman-share a{
+
+    
+    background-color: hsl(210, 46%, 95%);
+    padding: 0.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.box-text-woman-share a:hover {
+
+
+    background-color: hsl(214, 17%, 51%);
+    transition: 0.3s ease-in-out;
+}
+
+.box-text-woman-share img:hover {
+
+    filter: brightness(4);
+    transition: 0.3s ease-in-out;
+}
+
+.box-text-woman-share-social-media {
+
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(217, 19%, 35%);
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    height: 85px;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+    padding: 0 9%;
+}
+
+
+.flexy {
+
+    display: flex;
+}
+
+.box-text-woman-share-social-media p {
+
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: hsl(212, 23%, 69%);
+    margin: 0;
+}
+
+.box-text-woman-share-social-media .social-media {
+
+    position: relative;
+    right: 0.6rem;
+}
+
+.box-text-woman-share-social-media .social-media a{
+
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+
+.box-text-woman-share-social-media .social-media a img {
+
+    width: 22px;
+}
+
+
+.box-text-woman-share-social-media #social-active{
+
+    background-color: hsl(214, 17%, 51%);
+    padding: 0.4rem;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.box-text-woman-share-social-media #social-active img {
+
+    width: 1.1rem;
+    filter: brightness(4);    
+}
+
+
+
+@media only screen and (min-width: 760px) {
+
+    
+    .box {
+
+        display: flex;
+        width: 800px;
+        height: 300px;
+
+    }
+
+    .box-imagen img {
+
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+        width: 20rem;
+    }
+
+    .box-text {
+
+        padding: 1.6rem 2rem;
+        
+    }
+
+    .box-text h3 {
+
+        line-height: 1.6rem;
+        font-size: 1.3rem;
+    }
+
+    .box-text p {
+
+        margin-top: 1rem;
+        
+    }
+    
+    .box-text-woman {
+
+        margin-top: 2.5rem;
+        
+    }
+
+    .box-text-woman-share-social-media {
+
+    
+    align-items: center;
+    justify-content: space-around;
+    width: 52%;
+    z-index: 100;
+    position: absolute;
+    bottom: 7.5rem;
+    height: 55px;
+    left: 18.7rem;
+    border-radius: 10px;
+    padding: 0 5.5%;
+    box-shadow: 0 4px 8px 0 rgb(170,170,170);
+
+    }
+
+    .box-text-woman-share-social-media::after {
+
+        content: "▼";
+        position: relative;
+        top: 2rem;
+        right: 5.2rem;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .box-text-woman-share-social-media p {
+
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .box-text-woman-share-social-media #social-active {
+
+        display: none;
+    }
+
+    .box-text-woman-share-social-media .social-media {
+
+        display: flex;
+        align-items: center;
+        left: 1rem;
+    }
+
+
+    .box-text-woman-share-social-media .social-media a img {
+
+    width: 20px;
+    }
+}
